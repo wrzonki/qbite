@@ -18,6 +18,10 @@
 	};
 </script>
 
+<svelte:head>
+  <title>Qbit - Team</title>
+</svelte:head>
+
 <h2>Team</h2>
 <Hero
 	name="rune larsen"

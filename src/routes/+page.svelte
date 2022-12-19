@@ -2,6 +2,10 @@
   export const prerender = true;
 </script>
 
+<svelte:head>
+  <title>Qbit - Home</title>
+</svelte:head>
+
 <div>
   <h1>Multi-strategy quantitative hedge fund</h1>
   <p>

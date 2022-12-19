@@ -49,6 +49,10 @@
   </p>
 </div>
 
+<svelte:head>
+  <title>Qbit - Join us</title>
+</svelte:head>
+
 <style>
   .post {
     cursor: pointer;
