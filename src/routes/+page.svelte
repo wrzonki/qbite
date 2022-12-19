@@ -30,6 +30,7 @@
     text-align: center;
   }
   p {
+    font-size: larger;
     text-indent: 15px;
     text-align: justify;
   }

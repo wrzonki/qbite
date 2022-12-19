@@ -117,6 +117,7 @@
     }
     a.active {
       background-color: #19bfb7;
+      color: #222;
     }
   }
 </style>

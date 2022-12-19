@@ -62,7 +62,12 @@
   h2 {
     text-align: center;
   }
+  h5 {
+    text-indent: 15px;
+    text-align: justify;
+  }
   p {
+    font-size: larger;
     text-indent: 15px;
     text-align: justify;
   }
