@@ -50,7 +50,7 @@
 </div>
 
 <svelte:head>
-  <title>Qbit - Join us</title>
+  <title>Qbite - Join us</title>
 </svelte:head>
 
 <style>

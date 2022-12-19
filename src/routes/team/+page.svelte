@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-  <title>Qbit - Team</title>
+  <title>Qbite - Team</title>
 </svelte:head>
 
 <h2>Team</h2>

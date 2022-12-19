@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Qbit - Home</title>
+  <title>Qbite - Home</title>
 </svelte:head>
 
 <div>
