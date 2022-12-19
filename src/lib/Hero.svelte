@@ -1,6 +1,4 @@
 <script>
-	import { onMount } from "svelte";
-
   export let name = '';
   export let image = '';
   export let linkedin = '';
@@ -29,7 +27,7 @@
 </a>
 
 <style lang="scss">
-  $duration: 15s;
+  $duration: 10s;
   #hero {
 		width: 100%;
 		height: 18%;
@@ -51,7 +49,12 @@
 		animation: wheelHueColor $duration infinite;
     text-decoration: none;
     color: #ccc;
+    filter: opacity(0.7);
+    transition: all .4s ease-in-out;
 	}
+  #hero:hover {
+    filter: opacity(1);
+  }
 
 	@keyframes wheelHueColor {
 		from,

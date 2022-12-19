@@ -33,7 +33,16 @@
 <svelte:window on:resize={calculateDeviceSize} />
 
 {#if isMobile}
-	<slot/>
+  <div id="device">
+    <a id="logo" href="/">
+      <img src="/logo.svg" alt="Logo Qbite Capital"/>
+    </a>
+    <div id="nav">
+      <a href="team" class="{$page.url.pathname === '/team' ? 'active' : ''}">Team</a>
+      <a href="joinus" class="{$page.url.pathname === '/joinus' ? 'active' : ''}">Join us</a>
+    </div>
+    <slot />
+  </div>
 {:else}
 	<div id="wrapper" style:width="{appWidth}px" style:height="{appHeight}px">
     <div id="device">
@@ -87,6 +96,7 @@
     display: block;
     background: #283149;
     padding: 20px;
+    z-index: 10;
     img {
       width: 100%;
     }
