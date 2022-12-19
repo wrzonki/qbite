@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Hero from '$lib/Hero.svelte';
 
+  export const prerender = false;
+
 	const getAnimationColors = (at: number) => {
 		let colors = [
 			[143, 119, 119],
