@@ -1,11 +1,11 @@
 <script>
-  export let name = '';
-  export let image = '';
-  export let linkedin = '';
+	export let name = '';
+	export let image = '';
+	export let linkedin = '';
 
-  export let colors;
+	export let colors;
 
-  const varStyles = `
+	const varStyles = `
   --at0: rgba(${colors[0].join()});
   --at16: rgba(${colors[1].join()});
   --at33: rgba(${colors[2].join()});
@@ -16,19 +16,19 @@
 </script>
 
 <a
-  id="hero"
-  href={linkedin}
-  target="_blank"
-  rel={name}
-  style:background-image="url({image})"
-  style="{varStyles}"
+	id="hero"
+	href={linkedin}
+	target="_blank"
+	rel={name}
+	style:background-image="url({image})"
+	style={varStyles}
 >
-  {name}
+	{name}
 </a>
 
 <style lang="scss">
-  $duration: 10s;
-  #hero {
+	$duration: 10s;
+	#hero {
 		width: 100%;
 		height: 18%;
 		background-size: 30%;
@@ -47,14 +47,14 @@
 		align-items: center;
 		justify-content: center;
 		animation: wheelHueColor $duration infinite;
-    text-decoration: none;
-    color: #ccc;
-    filter: opacity(0.7);
-    transition: all .4s ease-in-out;
+		text-decoration: none;
+		color: #ccc;
+		filter: opacity(0.7);
+		transition: all 0.4s ease-in-out;
 	}
-  #hero:hover {
-    filter: opacity(1);
-  }
+	#hero:hover {
+		filter: opacity(1);
+	}
 
 	@keyframes wheelHueColor {
 		from,

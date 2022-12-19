@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/Hero.svelte';
 
-  export const prerender = false;
+	export const prerender = false;
 
 	const getAnimationColors = (at: number) => {
 		let colors = [
@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-  <title>Qbite - Team</title>
+	<title>Qbite - Team</title>
 </svelte:head>
 
 <h2>Team</h2>
@@ -65,7 +65,7 @@
 />
 
 <style>
-  h2 {
-    text-align: center;
-  }
+	h2 {
+		text-align: center;
+	}
 </style>

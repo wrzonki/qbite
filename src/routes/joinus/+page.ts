@@ -1,13 +1,14 @@
 import type { PageLoad } from './$types';
 
 export const load = (() => {
-  return {
-    posts: [
-      {
-        id: 1,
-        title: 'Software Engineer (student)',
-        subtitle: 'Your work will involve building and maintaining code relating to all three parts of the trading cycle (pre-trade, trade, and post-trade). Specifically covering:',
-        contentHTML: `
+	return {
+		posts: [
+			{
+				id: 1,
+				title: 'Software Engineer (student)',
+				subtitle:
+					'Your work will involve building and maintaining code relating to all three parts of the trading cycle (pre-trade, trade, and post-trade). Specifically covering:',
+				contentHTML: `
           <div style="line-height: 24px; margin-top: 10px">
             <hr>
             <b>Quant Hedge Fund - Copenhagen - permanent - part time</b>
@@ -53,8 +54,8 @@ export const load = (() => {
                 QBite Capital is an equal opportunity employer.  We make all employment decisions based solely on merit.  We provide equal employment opportunity to all applicants and employees without discrimination on the bases of race, color, religion, national origin, disability, gender, sexual orientation, age, or any other protected status.<br>
             </div>
           </div>
-        `,
-      }
-    ]
-  }
+        `
+			}
+		]
+	};
 }) satisfies PageLoad;

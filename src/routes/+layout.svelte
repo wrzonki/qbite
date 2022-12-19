@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-  import { page } from '$app/stores';
+	import { page } from '$app/stores';
 
 	const ratio = [9, 16];
 
@@ -13,7 +13,7 @@
 			window.navigator.userAgent
 		);
 		calculateDeviceSize();
-    console.log($page.url.pathname)
+		console.log($page.url.pathname);
 	});
 
 	const calculateDeviceSize = () => {
@@ -33,28 +33,28 @@
 <svelte:window on:resize={calculateDeviceSize} />
 
 {#if isMobile}
-  <div id="device">
-    <a id="logo" href="/">
-      <img src="/logo.svg" alt="Logo Qbite Capital"/>
-    </a>
-    <div id="nav">
-      <a href="team" class="{$page.url.pathname === '/team' ? 'active' : ''}">Team</a>
-      <a href="joinus" class="{$page.url.pathname === '/joinus' ? 'active' : ''}">Join us</a>
-    </div>
-    <slot />
-  </div>
+	<div id="device">
+		<a id="logo" href="/">
+			<img src="/logo.svg" alt="Logo Qbite Capital" />
+		</a>
+		<div id="nav">
+			<a href="team" class={$page.url.pathname === '/team' ? 'active' : ''}>Team</a>
+			<a href="joinus" class={$page.url.pathname === '/joinus' ? 'active' : ''}>Join us</a>
+		</div>
+		<slot />
+	</div>
 {:else}
 	<div id="wrapper" style:width="{appWidth}px" style:height="{appHeight}px">
-    <div id="device">
-      <a id="logo" href="/">
-        <img src="/logo.svg" alt="Logo Qbite Capital"/>
-      </a>
-      <div id="nav">
-        <a href="team" class="{$page.url.pathname === '/team' ? 'active' : ''}">Team</a>
-        <a href="joinus" class="{$page.url.pathname === '/joinus' ? 'active' : ''}">Join us</a>
-      </div>
-      <slot />
-    </div>
+		<div id="device">
+			<a id="logo" href="/">
+				<img src="/logo.svg" alt="Logo Qbite Capital" />
+			</a>
+			<div id="nav">
+				<a href="team" class={$page.url.pathname === '/team' ? 'active' : ''}>Team</a>
+				<a href="joinus" class={$page.url.pathname === '/joinus' ? 'active' : ''}>Join us</a>
+			</div>
+			<slot />
+		</div>
 	</div>
 {/if}
 
@@ -68,56 +68,56 @@
 		justify-content: center;
 		align-items: center;
 		background: #e0e0e0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    -webkit-font-smoothing: antialiased;
+		box-sizing: border-box;
+		font-family: 'Lato', sans-serif;
+		-webkit-font-smoothing: antialiased;
 	}
-  :global( ::selection) {
-    color: #19bfb7;
-    background-color: #283149;
-  }
-  :global(::-webkit-scrollbar) {
-    display: none;
-  }
+	:global(::selection) {
+		color: #19bfb7;
+		background-color: #283149;
+	}
+	:global(::-webkit-scrollbar) {
+		display: none;
+	}
 	#wrapper {
 		overflow: hidden;
 		border-radius: 50px;
 		background: #e0e0e0;
 		box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 	}
-  #device {
+	#device {
 		height: 100%;
 		width: 100%;
-    overflow-x: auto;
+		overflow-x: auto;
 	}
-  #logo {
-    position:sticky;
-    top: 0;
-    display: block;
-    background: #283149;
-    padding: 20px;
-    z-index: 10;
-    img {
-      width: 100%;
-    }
-    max-width: 100%;
-  }
-  #nav {
-    display: flex;
-    justify-content: space-between;
-    a {
-      display: block;
-      width: 50%;
-      height: 40px;
-      line-height: 40px;
-      background-color: #283149;
-      color: #ddd;
-      text-decoration: none;
-      text-align: center;
-    }
-    a.active {
-      background-color: #19bfb7;
-      color: #222;
-    }
-  }
+	#logo {
+		position: sticky;
+		top: 0;
+		display: block;
+		background: #283149;
+		padding: 20px;
+		z-index: 10;
+		img {
+			width: 100%;
+		}
+		max-width: 100%;
+	}
+	#nav {
+		display: flex;
+		justify-content: space-between;
+		a {
+			display: block;
+			width: 50%;
+			height: 40px;
+			line-height: 40px;
+			background-color: #283149;
+			color: #ddd;
+			text-decoration: none;
+			text-align: center;
+		}
+		a.active {
+			background-color: #19bfb7;
+			color: #222;
+		}
+	}
 </style>
