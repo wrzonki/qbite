@@ -32,36 +32,42 @@
 	colors={getAnimationColors(0)}
 />
 <Hero
+	name="mads westberg"
+	image="/mads.png"
+	linkedin="https://www.linkedin.com/in/mads-westberg-969bba12b/"
+	colors={getAnimationColors(1)}
+/>
+<Hero
 	name="karl engelund"
 	image="/karl.png"
 	linkedin="https://www.linkedin.com/in/karl-kristian-engelund/"
-	colors={getAnimationColors(1)}
+	colors={getAnimationColors(2)}
 />
 <Hero
 	name="mathias spurr"
 	image="/mathias.png"
 	linkedin="https://www.linkedin.com/in/mspurr/"
-	colors={getAnimationColors(2)}
+	colors={getAnimationColors(3)}
 />
 <h2>Advisory Board</h2>
 <Hero
 	name="frederik thufason"
 	image="/frederik.png"
 	linkedin="https://www.linkedin.com/in/frederik-thufason-8836ab28/"
-	colors={getAnimationColors(3)}
+	colors={getAnimationColors(4)}
 />
 <Hero
 	name="andreas steno"
 	image="/andreas.png"
 	linkedin="https://www.linkedin.com/in/andreasstenolarsen/"
-	colors={getAnimationColors(4)}
+	colors={getAnimationColors(5)}
 />
 <h2>Future members</h2>
 <Hero
 	name="paweł wrzosek"
 	image="/pawel.png"
 	linkedin="https://www.linkedin.com/in/pawel-wrzosek/"
-	colors={getAnimationColors(1)}
+	colors={getAnimationColors(0)}
 />
 
 <style>
